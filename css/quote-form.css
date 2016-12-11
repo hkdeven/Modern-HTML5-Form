@@ -1,0 +1,631 @@
+/* Roboto google font import
+--------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+html, body{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* form wrappers
+---------------------------------- */
+.smart-wrap{ padding:0 20px; }
+.html-quote-form,
+.html-quote-form *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.html-quote-form {
+	line-height: 1.231;
+	font-weight: 400;
+	font-size: 14px;
+	color: #34495E;
+}
+
+.smart-container{
+	margin:50px auto;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+}
+
+/* form container width
+/* if you want to change the form container width change the values below
+/* alternatively you can add yours eg .wrap4{ max-width:200px; }
+---------------------------------------------------------------------------- */
+.wrap-0{ max-width:952px; }
+.wrap-1{ max-width:852px; }
+.wrap-2{ max-width:652px; }
+.wrap-3{ max-width:452px; }
+
+/* form helper classes
+--------------------------------------------------------------- */
+.html-quote-form .section{ margin-bottom:22px; }
+.html-quote-form .smart-link{ color:#fcd62a; text-decoration:none; }
+.html-quote-form .smart-link:hover{ text-decoration: underline; }
+.html-quote-form .tagline{ height:0; border-top:1px solid #D9DDE5; text-align:center;  }
+.html-quote-form .tagline span{
+	text-transform:uppercase;
+	display:inline-block;
+	position:relative;
+	padding:0 15px;
+	background:#fff;
+	color:#fcd62a;
+	top:-10px;
+}
+
+/* form label + field :: field class is useful for validation
+---------------------------------------------------------------------- */
+.html-quote-form .field{ display:block; position:relative; }
+.html-quote-form .field-icon i { color:#A2A6A8; position:relative; top:0; }
+.html-quote-form .field-label { display: block; margin-bottom: 7px; }
+.html-quote-form .field-label.colm{ padding-top:12px; }
+.html-quote-form .field-label em{
+	color:#e74c3c;
+	font-size:14px;
+	font-style:normal;
+	display:inline-block;
+	margin-left:4px;
+	position:relative;
+	top:3px;
+}
+
+/* form body
+------------------------------------------------------------------- */
+.html-quote-form .form-body{ padding:40px 30px; padding-bottom:20px; }
+
+/* crossbrowser placeholder styling :: modern browsers only IE10+
+------------------------------------------------------------------------ */
+.html-quote-form input[type=search] { -webkit-appearance: textfield; }
+.html-quote-form ::-webkit-search-decoration,
+.html-quote-form ::-webkit-search-cancel-button { -webkit-appearance: none; }
+.html-quote-form input::-webkit-input-placeholder,
+.html-quote-form textarea::-webkit-input-placeholder { color: #919DA8; }
+.html-quote-form input:focus::-webkit-input-placeholder,
+.html-quote-form textarea:focus::-webkit-input-placeholder { color: #D6DBE0; }
+.html-quote-form input:-moz-placeholder,
+.html-quote-form textarea:-moz-placeholder { color: #919DA8; }
+.html-quote-form input:focus:-moz-placeholder,
+.html-quote-form textarea:focus:-moz-placeholder { color: #D6DBE0; }
+.html-quote-form input::-moz-placeholder,
+.html-quote-form textarea::-moz-placeholder { color: #919DA8; opacity: 1; }
+.html-quote-form input:focus::-moz-placeholder,
+.html-quote-form textarea:focus::-moz-placeholder { color: #D6DBE0; opacity: 1; }
+.html-quote-form input:-ms-input-placeholder,
+.html-quote-form textarea:-ms-input-placeholder { color: #919DA8; }
+.html-quote-form input:focus:-ms-input-placeholder,
+.html-quote-form textarea:focus:-ms-input-placeholder { color: #D6DBE0; }
+
+/* element general styling :: fonts
+------------------------------------------------------------- */
+.html-quote-form label,
+.html-quote-form input,
+.html-quote-form button,
+.html-quote-form select,
+.html-quote-form textarea {
+	margin: 0;
+	font-size: 14px;
+	font-family:  "Roboto", Arial, Helvetica, sans-serif;
+	font-weight:400;
+	color: #34495E;
+	outline:none;
+}
+
+/* remove browser styling
+----------------------------------------------- */
+.html-quote-form .gui-input,
+.html-quote-form .gui-textarea,
+.html-quote-form .select > select,
+.html-quote-form input[type="button"],
+.html-quote-form input[type="submit"],
+.html-quote-form input[type="search"],
+.html-quote-form .select-multiple select {
+	-webkit-tap-highlight-color:transparent;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-border-radius:0px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+}
+
+.html-quote-form input[type="search"]::-webkit-search-decoration,
+.html-quote-form input[type="search"]::-webkit-search-cancel-button,
+.html-quote-form input[type="search"]::-webkit-search-results-button,
+.html-quote-form input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+/* labels font-size styling :: adjust to fit your needs
+--------------------------------------------------------- */
+.html-quote-form .switch,
+.html-quote-form .option,
+.html-quote-form .field-label{ font-size:14px; }
+
+/* prevent user selection for usability purposes
+----------------------------------------------------- */
+.html-quote-form .radio,
+.html-quote-form .button,
+.html-quote-form .checkbox,
+.html-quote-form .switch > label{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* universal rules for all elements
+---------------------------------------------------- */
+.html-quote-form .radio,
+.html-quote-form .button,
+.html-quote-form .tooltip,
+.html-quote-form .checkbox,
+.html-quote-form .gui-input,
+.html-quote-form .notification,
+.html-quote-form .gui-textarea,
+.html-quote-form .select > select,
+.html-quote-form .select-multiple select,
+.html-quote-form input[type="button"].button,
+.html-quote-form input[type="submit"].button,
+.html-quote-form input[type="search"].gui-input{
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+	outline:none;
+}
+
+.html-quote-form .select > select,
+.html-quote-form .select-multiple select{
+	-webkit-transition:none;
+	-moz-transition:none;
+	-ms-transition:none;
+	-o-transition:none;
+	transition:none;
+}
+
+/* control border-size :: color etc for these elements
+----------------------------------------------------------- */
+.html-quote-form .select,
+.html-quote-form .gui-input,
+.html-quote-form .gui-textarea,
+.html-quote-form .select > select,
+.html-quote-form .select-multiple select{
+	background: #fff;
+	position: relative;
+	vertical-align: top;
+	border: 2px solid #BDC3C7;
+	display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+	color: #34495E;
+	outline:none;
+	height: 42px;
+	width: 100%;
+	*zoom: 1;
+}
+
+/* styling inputs and textareas
+------------------------------------------- */
+.html-quote-form .gui-input,
+.html-quote-form .gui-textarea { padding:10px; }
+.html-quote-form .gui-textarea {
+    resize: none;
+	line-height: 19px;
+	overflow: auto;
+	max-width:100%;
+    height: 96px;
+}
+
+/* hint below textareas
+---------------------------------------- */
+.html-quote-form .input-hint {
+    padding: 10px;
+	display: block;
+	margin-top: -4px;
+	line-height: 16px;
+	position: relative;
+	background: #F2F4FA;
+    border: 2px solid #bdc3c7;
+	border-top:1px solid #bdc3c7;
+	font-family:Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-o-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+    font-size: 11px;
+    color: #777;
+}
+
+/* form selects :: dropdowns
+-------------------------------------------------- */
+.html-quote-form .select { border:0; z-index:10; }
+.html-quote-form .select > select {
+	display: block;
+    padding:9px 10px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+	outline:none;
+	text-indent: 0.01px;
+    text-overflow: '';
+	z-index:10;
+	margin: 0;
+}
+
+.html-quote-form .select > select::-ms-expand { display: none; }
+.html-quote-form .select:before,
+.html-quote-form .select:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+	z-index:15;
+}
+
+.html-quote-form .select:before {
+	top: 2px;
+	right: 2px;
+	width: 34px;
+	bottom: 2px;
+	background: #F2F4FA;
+	border-left:1px solid #d3dae7;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.html-quote-form .select .arrow {
+	position: absolute;
+	top: 9px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+	background:#F2F4FA;
+	color:#B5C1C7;
+	pointer-events:none;
+	z-index:16;
+}
+
+.html-quote-form .select .arrow:after,
+.html-quote-form .select .arrow:before {
+	content: '';
+	position: absolute;
+	font:12px "Consolas", monospace;
+	font-style:normal;
+	pointer-events:none;
+	left:6px;
+}
+
+.html-quote-form .select .arrow:before { content:'\25BC'; bottom:4px; }
+.html-quote-form .select .double:after { content:'\25B2'; top:-1px;  }
+.html-quote-form .select .double:before { content:'\25BC'; bottom:-1px; }
+.html-quote-form .select-multiple select {
+	width:100%;
+	height: 123px;
+	padding: 10px;
+}
+
+/* file inputs :: file uploaders
+-------------------------------------------------------- */
+.html-quote-form .file{ display:block; width:100%; }
+.html-quote-form .file .gui-file{
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	padding:8px 10px;
+	position:absolute;
+	-moz-opacity:0;
+	opacity: 0;
+	z-index:11;
+	bottom:0;
+	right:0;
+}
+
+.html-quote-form .file .button {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	float: none;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 16px;
+	z-index:10;
+}
+
+/* form element :hover state
+-------------------------------------------- */
+.html-quote-form .gui-input:hover,
+.html-quote-form .gui-textarea:hover,
+.html-quote-form .select > select:hover,
+.html-quote-form .select-multiple select:hover,
+.html-quote-form .gui-input:hover ~ .input-hint,
+.html-quote-form .file .gui-file:hover + .gui-input,
+.html-quote-form .gui-textarea:hover ~ .input-hint{
+	border-color: #fcd62a;
+}
+
+/* form element :focus state
+-------------------------------------------------------- */
+.html-quote-form .gui-input:focus,
+.html-quote-form .gui-textarea:focus,
+.html-quote-form .select > select:focus,
+.html-quote-form .select-multiple select:focus{ border-color: #fcd62a; color: #3C3C3C; }
+.html-quote-form .gui-textarea:focus{  height: 120px; }
+.html-quote-form .select > select:focus { z-index:10; z-index:20\9; }
+.html-quote-form .gui-input:focus ~ .field-icon i,
+.html-quote-form .gui-textarea:focus ~ .field-icon i{ color:#fcd62a; }
+.html-quote-form .select-multiple select:focus,
+.html-quote-form .gui-input:focus ~ .input-hint,
+.html-quote-form .gui-textarea:focus ~ .input-hint,
+.html-quote-form .file .gui-file:focus + .gui-input{ border-color: #fcd62a; }
+.html-quote-form .select > select:focus + .arrow{ color:#fcd62a; }
+
+/* radio + checkbox option elements
+----------------------------------------------------- */
+.html-quote-form .option {
+    position: relative;
+	padding-right:15px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.html-quote-form .option > input {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+	left: 0;
+}
+
+/* buttons
+----------------------------------------------------- */
+.html-quote-form .button {
+  border: 0;
+	height: 42px;
+	color: #243140;
+	line-height: 1;
+	font-size:15px;
+  cursor: pointer;
+	padding: 0 18px;
+	text-align: center;
+	vertical-align: top;
+  background: #bdc3c7;
+	display: inline-block;
+	-webkit-user-drag: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* buttons :hover, :active states
+---------------------------------------------------------------- */
+.html-quote-form .button:hover { color: #243140; background: #cacfd2; }
+.html-quote-form .button:active{ color: #1d2938; background: #a1a6a9; }
+.html-quote-form a.button,
+.html-quote-form span.button,
+.html-quote-form label.button { line-height: 42px; text-decoration: none; }
+.html-quote-form .button i{ font-size:14px; }
+.html-quote-form .button-list .button{ margin-bottom:5px; }
+
+/* primary button style
+-------------------------------------------- */
+.html-quote-form .btn-primary {  background-color: #000000;  }
+.html-quote-form .btn-primary:hover,
+.html-quote-form .btn-primary:focus { background-color: #fcd62a; color: #000000;}
+.html-quote-form .btn-primary:active{ background-color: #fcb32a; }
+.html-quote-form .btn-primary { color: #ffffff; text-shadow: 0 1px rgba(0, 0, 0, 0.08); }
+.html-quote-form .btn-primary:hover,
+.html-quote-form .btn-primary:focus,
+.html-quote-form .btn-primary:active{ color: #000000; }
+
+/* lists
+-------------------------------------------------------------- */
+.html-quote-form .smart-list{ list-style:none; margin:0; padding:0; }
+.html-quote-form .smart-list li{ margin-bottom:20px; }
+
+/* notification messages | info | error | warning | success
+-------------------------------------------------------------- */
+.html-quote-form .form-msg{ display:none; }
+.html-quote-form .notification { color: #444; padding:15px; position:relative; }
+.html-quote-form .notification p{ margin:0; padding:0 15px; padding-left:5px; line-height:normal;  }
+.html-quote-form .notification .close-btn{
+	margin-top: -7px;
+	padding: inherit;
+	position: absolute;
+	text-decoration:none;
+    font: bold 20px/20px Arial, sans-serif;
+	opacity: 0.65;
+	color: inherit;
+    display: block;
+    right:1px;
+	top:14%;
+}
+
+.html-quote-form .notification .close-btn:hover{ opacity: 1; }
+.html-quote-form .alert-info { color:#163161; background-color: #cfe6fc; }
+.html-quote-form .alert-success { color:#336633; background-color: #d2f7ad; }
+.html-quote-form .alert-warning { color: #990000; background-color: #fae7a2; }
+.html-quote-form .alert-error { color:#990000; background-color: #FBDBCF; }
+.html-quote-form .notification ul{
+	margin-left:1.3em;
+	list-style-position: inside;
+	margin-top:10px;
+}
+
+/* validaion - error state
+------------------------------------- */
+.html-quote-form .state-error .gui-input,
+.html-quote-form .state-error .gui-textarea,
+.html-quote-form .state-error.select > select,
+.html-quote-form .state-error.select-multiple > select,
+.html-quote-form .state-error input:hover + .checkbox,
+.html-quote-form .state-error input:hover + .radio,
+.html-quote-form .state-error input:focus + .checkbox,
+.html-quote-form .state-error input:focus + .radio,
+.html-quote-form .state-error .checkbox,
+.html-quote-form .state-error .radio{
+	background:#FEEFE9;
+	border-color:#E46B66;
+}
+
+.html-quote-form .state-error .gui-input ~ .field-icon i,
+.html-quote-form .state-error .gui-textarea ~ .field-icon i{  color: #e74c3c; }
+.html-quote-form .state-error.select .arrow { color: #e74c3c; }
+.html-quote-form .state-error.select:before {  border-left:1px solid #E46B66; }
+.html-quote-form .state-error .gui-input ~ .input-hint,
+.html-quote-form .state-error.file .gui-file:hover + .gui-input,
+.html-quote-form .state-error .gui-textarea ~ .input-hint { border-color:#E46B66; }
+.html-quote-form .state-error + em{
+	display: block!important;
+	margin-top: 6px;
+	padding: 0 3px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: normal;
+	color:#CC0000;
+	font-size:0.85em;
+
+}
+
+/* validaion - success state
+-------------------------------------------------- */
+.html-quote-form .state-success .gui-input,
+.html-quote-form .state-success .gui-textarea,
+.html-quote-form .state-success.select > select,
+.html-quote-form .state-success.select-multiple > select,
+.html-quote-form .state-success input:hover + .checkbox,
+.html-quote-form .state-success input:hover + .radio,
+.html-quote-form .state-success input:focus + .checkbox,
+.html-quote-form .state-success input:focus + .radio,
+.html-quote-form .state-success .checkbox,
+.html-quote-form .state-success .radio{
+	background:#EAFCD8;
+	border-color:#fcd62a;
+}
+
+.html-quote-form .state-success .gui-input ~ .field-icon i,
+.html-quote-form .state-success .gui-textarea ~ .field-icon i{  color: #fcd62a; }
+.html-quote-form .state-success.select .arrow { color: #fcd62a; }
+.html-quote-form .state-success.select:before {  border-left:1px solid #fcd62a; }
+.html-quote-form .state-success .gui-input ~ .input-hint,
+.html-quote-form .state-success.file .gui-file:hover + .gui-input,
+.html-quote-form .state-success .gui-textarea ~ .input-hint { border-color:#fcd62a; }
+
+/* GRID SYSTEM ***********************
+----------------------------------- */
+
+/* form rows
+--------------------------------- */
+.html-quote-form .frm-row{ margin:0 -10px;  }
+.html-quote-form .slider-group:before,
+.html-quote-form .slider-group:after,
+.html-quote-form .frm-row:before,
+.html-quote-form .frm-row:after { display: table; content: ""; line-height: 0; }
+.html-quote-form .slider-group:after,
+.html-quote-form .frm-row:after{ clear: both; }
+
+/* form columns
+----------------------------------- */
+.html-quote-form .frm-row .colm{
+	min-height:1px;
+	padding-left:10px;
+	padding-right:10px;
+	position:relative;
+	float:left;
+}
+
+.html-quote-form .frm-row .colm1{width:8.33%;}
+.html-quote-form .frm-row .colm2{width:16.66%;}
+.html-quote-form .frm-row .colm3{width:25%;}
+.html-quote-form .frm-row .colm4{width:33.33%;}
+.html-quote-form .frm-row .colm5{width:41.66%;}
+.html-quote-form .frm-row .colm6{width:50%;}
+.html-quote-form .frm-row .colm7{width:58.33%;}
+.html-quote-form .frm-row .colm8{width:66.66%;}
+.html-quote-form .frm-row .colm9{width:75%;}
+.html-quote-form .frm-row .colm10{width:83.33%;}
+.html-quote-form .frm-row .colm11{width:91.66%;}
+.html-quote-form .frm-row .colm12{width:100%; }
+.html-quote-form .frm-row .colm1-5{width:20%;}
+.html-quote-form .frm-row .colm1-8{width:12.5%;}
+
+/* spacers
+--------------------------------------- */
+.html-quote-form .spacer{
+	border-top:1px solid #D9DDE5;
+	display:block;
+	height:0;
+}
+
+/* margin spacers :: modify accordingly
+-------------------------------------------- */
+.html-quote-form .spacer-t10{ margin-top:10px; }
+.html-quote-form .spacer-b10{ margin-bottom:10px; }
+.html-quote-form .spacer-t15{ margin-top:15p; }
+.html-quote-form .spacer-b15{ margin-bottom:15px; }
+.html-quote-form .spacer-t20{ margin-top:20px; }
+.html-quote-form .spacer-b20{ margin-bottom:20px; }
+.html-quote-form .spacer-t25{ margin-top:25px; }
+.html-quote-form .spacer-b25{ margin-bottom:25px; }
+.html-quote-form .spacer-t30{ margin-top:30px; }
+.html-quote-form .spacer-b30{ margin-bottom:30px; }
+.html-quote-form .spacer-t40{ margin-top:40px; }
+.html-quote-form .spacer-b40{ margin-bottom:40px; }
+
+/* padding spacers :: modify accordingly
+-------------------------------------------------- */
+.html-quote-form .frm-row .pad-l10{ padding-left:10px; }
+.html-quote-form .frm-row .pad-r10{ padding-right:10px; }
+.html-quote-form .frm-row .pad-l20{ padding-left:20px; }
+.html-quote-form .frm-row .pad-r20{ padding-right:20px; }
+.html-quote-form .frm-row .pad-l30{ padding-left:30px; }
+.html-quote-form .frm-row .pad-r30{ padding-right:30px; }
+.html-quote-form .frm-row .pad-l40{ padding-left:40px; }
+.html-quote-form .frm-row .pad-r40{ padding-right:40px; }
+
+/* border spacers + text adjust
+-------------------------------------------------- */
+.html-quote-form .bdl { border-left:1px solid #D9DDE5;  }
+.html-quote-form .bdr { border-right:1px solid #D9DDE5; }
+.html-quote-form .fine-grey{ color:#919DA8; }
+.html-quote-form .small-text{ font-size:11px; font-style:normal;  }
+.html-quote-form .text-align{ height:42px; line-height:42px; }
+
+/* element alignment
+-------------------------------------------------- */
+.html-quote-form .align-right{ text-align:right; }
+.html-quote-form .align-center{ text-align:center; }
+
+/* android + ios fix
+------------------------------------------------------------- */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+        .html-quote-form .option,
+        .html-quote-form .rating,
+        .html-quote-form .switch,
+		.html-quote-form .captcode { -webkit-animation: bugfix infinite 1s; }
+        @-webkit-keyframes bugfix {
+            from { padding: 0;  }
+            to { padding: 0; }
+        }
+		.html-quote-form .switch { margin-right:10px;  margin-bottom:5px; }
+		.html-quote-form .option { margin-right:15px; }
+		.html-quote-form .switch-round > .switch-label:after{ font:20px/18px Times, Serif; }
+}
+
+
+/* responsiveness for tablets + smart mobile
+-------------------------------------------------- */
+@media (max-width: 800px) {
+	.html-quote-form .frm-row{ margin:0;  }
+	.html-quote-form .frm-row .colm{  width: 100%; float:none; padding:0; }
+	.html-quote-form .bdl { border-left:0;  }
+	.html-quote-form .bdr { border-right:0; }
+	.html-quote-form .align-right{ text-align: left; }
+}
