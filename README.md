@@ -8,7 +8,7 @@ If you're using an existing framework, such as bootstrap, you can simply strip t
 
 Because of the constraints of the project for which I am building this form, I have opted to use basic CSS over SASS.  But you can expect to see a SASS version in the near future.
 
-:octocat:   Long live open source.
+:octocat:   **Long live open source.**
 
 [![Twitter](http://www.morethandancers.com/wp-content/uploads/2016/06/twitter-follow-button.png)][2]
 
